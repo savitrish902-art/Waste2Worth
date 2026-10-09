@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7faf5">
+  <title>Waste2Worth | Small Actions. Lasting Impact.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    🌱 Make waste useful. Make sustainability rewarding.
+    <button id="announcementClose" aria-label="Close announcement">×</button>
+  </div>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-icon">♻</span>
+      <span>Waste<span class="brand-highlight">2</span>Worth</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#impact">Our impact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-light" id="loginBtn">Log in</button>
+      <button class="btn btn-primary" id="signupBtn">Get started ↗</button>
+      <button class="profile-button hidden" id="profileBtn">My account</button>
+    </div>
+  </header>
+
+  <main id="publicPage">
+
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR EVERYDAY ECO COMPANION</div>
+        <h1>Don't throw it away.<br><span>Turn it into impact.</span></h1>
+        <p class="hero-description">
+          Discover smarter ways to reuse, recycle, and donate everyday waste.
+          Earn rewards, join a greener community, and see the difference you make.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-large" id="heroSignup">Start your green journey ↗</button>
+          <a href="#how" class="btn btn-outline btn-large">Explore how it works ↓</a>
+        </div>
+
+        <div class="trust-row">
+          <div class="avatar-stack">
+            <span>🌿</span><span>🌎</span><span>♻️</span>
+          </div>
+          <div><strong>Every action counts.</strong><br><small>Start with one item today.</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="floating-label label-top">✦ Your actions matter</div>
+
+        <div class="phone">
+          <div class="phone-top"><span>9:41</span><span>● ● ▰</span></div>
+          <div class="phone-content">
+            <div class="phone-welcome">Good morning! 🌱</div>
+            <div class="phone-heading">Your green journey</div>
+            <div class="phone-score">
+              <span>YOUR ECO POINTS</span>
+              <strong>1,250 <small>XP</small></strong>
+              <div class="progress-track"><div style="width:65%"></div></div>
+              <small>650 points to the next level</small>
+            </div>
+            <div class="phone-section-title">What will you do today?</div>
+            <div class="phone-actions">
+              <div><span>📷</span><b>Scan waste</b></div>
+              <div><span>🎁</span><b>Earn rewards</b></div>
+              <div><span>🌍</span><b>Track impact</b></div>
+              <div><span>🤝</span><b>Join a challenge</b></div>
+            </div>
+            <div class="phone-bottom">⌂ &nbsp;&nbsp; ♻ &nbsp;&nbsp; 🏆 &nbsp;&nbsp; ◉</div>
+          </div>
+        </div>
+
+        <div class="floating-label label-bottom">
+          <span class="success-icon">✓</span>
+          <div><strong>Waste reimagined</strong><small>One item. A new possibility.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mini-stats">
+      <div><span>♻️</span><strong>Reuse more</strong><small>Find a second life for waste</small></div>
+      <div><span>🎁</span><strong>Earn rewards</strong><small>Make good habits rewarding</small></div>
+      <div><span>🌍</span><strong>Track your impact</strong><small>See your progress grow</small></div>
+      <div><span>🤝</span><strong>Grow together</strong><small>Join your eco-community</small></div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="section-heading">
+        <span class="eyebrow">A SMARTER WAY TO BE GREEN</span>
+        <h2>Good for the planet.<br><span>Rewarding for you.</span></h2>
+        <p>Everything you need to turn everyday waste into meaningful action.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-green">
+          <div class="feature-icon">📷</div>
+          <span class="card-kicker">01 / IDENTIFY</span>
+          <h3>Know before you throw</h3>
+          <p>Explore what an item is made of and discover practical reuse, recycling, donation, or disposal options.</p>
+          <button class="text-link feature-action" data-action="scanner">Try the waste scanner ↗</button>
+          <div class="feature-decoration">♻</div>
+        </article>
+
+        <article class="feature-card feature-peach">
+          <div class="feature-icon">🎁</div>
+          <span class="card-kicker">02 / GET REWARDED</span>
+          <h3>Make good habits count</h3>
+          <p>Collect demo eco-points, build streaks, unlock badges, and celebrate your sustainable actions.</p>
+          <button class="text-link feature-action" data-action="rewards">Explore rewards ↗</button>
+          <div class="feature-decoration">✦</div>
+        </article>
+
+        <article class="feature-card feature-blue">
+          <div class="feature-icon">🌎</div>
+          <span class="card-kicker">03 / MEASURE</span>
+          <h3>See your difference</h3>
+          <p>Follow your activity and estimated waste-diversion progress in one simple impact dashboard.</p>
+          <button class="text-link feature-action" data-action="impact">View your impact ↗</button>
+          <div class="feature-decoration">↗</div>
+        </article>
+
+        <article class="feature-card feature-yellow">
+          <div class="feature-icon">🤝</div>
+          <span class="card-kicker">04 / CONNECT</span>
+          <h3>Better together</h3>
+          <p>Take on eco-challenges, compete on the leaderboard, and build greener community habits.</p>
+          <button class="text-link feature-action" data-action="challenges">Discover challenges ↗</button>
+          <div class="feature-decoration">♡</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-section section" id="how">
+      <div class="section-heading">
+        <span class="eyebrow">SIMPLE BY DESIGN</span>
+        <h2>From waste to worth<br>in <span>four easy steps.</span></h2>
+        <p>No complicated process. Just better everyday decisions.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step"><span class="step-number">01</span><div class="step-icon">🧴</div><h3>Choose an item</h3><p>Pick the waste item you want to deal with.</p></div>
+        <div class="step"><span class="step-number">02</span><div class="step-icon">🔎</div><h3>Find your options</h3><p>Explore possible reuse and disposal pathways.</p></div>
+        <div class="step"><span class="step-number">03</span><div class="step-icon">🌱</div><h3>Take action</h3><p>Follow the guidance and record your action.</p></div>
+        <div class="step"><span class="step-number">04</span><div class="step-icon">🏆</div><h3>Track your progress</h3><p>Earn demo points and grow your impact record.</p></div>
+      </div>
+    </section>
+
+    <section class="demo-section section">
+      <div class="demo-copy">
+        <span class="eyebrow">MEET YOUR WASTE ASSISTANT</span>
+        <h2>One item.<br><span>More possibilities.</span></h2>
+        <p>Not sure what to do with an empty bottle, an old T-shirt, or a cardboard box? Choose an example and explore a practical next step.</p>
+        <ul class="check-list">
+          <li>✓ Clear, easy-to-follow guidance</li>
+          <li>✓ Reuse before disposal whenever practical</li>
+          <li>✓ Local recycling rules still matter</li>
+        </ul>
+        <button class="btn btn-primary btn-large" id="demoScannerBtn">Explore the scanner ↗</button>
+      </div>
+
+      <div class="demo-preview">
+        <div class="preview-header"><span>WASTE ASSISTANT</span><span class="status-pill">● DEMO</span></div>
+        <div class="sample-item">
+          <div class="sample-image">🧴</div>
+          <div><small>EXAMPLE ITEM</small><h3>Plastic bottle</h3><p>Empty · Rinse before recycling</p></div>
+        </div>
+        <div class="preview-divider"></div>
+        <p class="recommend-label">POSSIBLE NEXT STEPS</p>
+        <div class="recommendation"><span>♻️</span><div><b>Recycle</b><small>Check your local plastic acceptance rules.</small></div><span>↗</span></div>
+        <div class="recommendation"><span>🌱</span><div><b>Reuse</b><small>Use a suitable reusable bottle instead.</small></div><span>↗</span></div>
+        <div class="recommendation"><span>🗑️</span><div><b>Dispose responsibly</b><small>If not accepted for recycling, follow local guidance.</small></div><span>↗</span></div>
+        <small class="demo-disclaimer">Illustrative guidance, not an actual image-recognition result.</small>
+      </div>
+    </section>
+
+    <section class="impact-section section" id="impact">
+      <div class="impact-intro">
+        <span class="eyebrow">SMALL STEPS. BIGGER PICTURE.</span>
+        <h2>Your impact<br>starts <span>with one action.</span></h2>
+        <p>Every properly recorded action helps you understand your habits and work toward less waste.</p>
+        <button class="btn btn-white" id="impactSignup">Start tracking your impact ↗</button>
+      </div>
+      <div class="impact-cards">
+        <div class="impact-card"><span>♻️</span><small>WASTE DIVERTED</small><strong>0 kg</strong><p>Your personal demo tracker</p></div>
+        <div class="impact-card"><span>🌱</span><small>ECO ACTIONS</small><strong>0</strong><p>Actions recorded by you</p></div>
+        <div class="impact-card"><span>🏆</span><small>POINTS EARNED</small><strong>0 XP</strong><p>Points from demo activities</p></div>
+        <p class="impact-note">These start at zero. Values update as you use the demo, rather than representing real-world or independently verified impact.</p>
+      </div>
+    </section>
+
+    <section class="section challenges-section" id="challenges">
+      <div class="section-heading heading-row">
+        <div><span class="eyebrow">MAKE IT A MOVEMENT</span><h2>Good habits are<br><span>better together.</span></h2></div>
+        <button class="btn btn-outline" id="challengeSignup">Join the community ↗</button>
+      </div>
+
+      <div class="challenge-grid">
+        <article class="challenge-card">
+          <div class="challenge-top"><span class="challenge-emoji">🥤</span><span class="challenge-tag">7 DAYS</span></div>
+          <h3>Plastic-Free Sips</h3><p>Choose reusable drinkware instead of single-use bottles.</p>
+          <div class="challenge-bottom"><span>🌱 Everyday habits</span><b>+50 XP</b></div>
+          <button class="btn btn-primary challenge-join" data-challenge="Plastic-Free Sips">Join challenge ↗</button>
+        </article>
+        <article class="challenge-card">
+          <div class="challenge-top"><span class="challenge-emoji">🧺</span><span class="challenge-tag">5 DAYS</span></div>
+          <h3>Give It a Second Life</h3><p>Find a practical reuse or donation option for an unwanted item.</p>
+          <div class="challenge-bottom"><span>♻️ Reuse & donate</span><b>+40 XP</b></div>
+          <button class="btn btn-primary challenge-join" data-challenge="Give It a Second Life">Join challenge ↗</button>
+        </article>
+        <article class="challenge-card">
+          <div class="challenge-top"><span class="challenge-emoji">🏡</span><span class="challenge-tag">3 DAYS</span></div>
+          <h3>Home Sorting Hero</h3><p>Separate suitable recyclables and keep contamination low.</p>
+          <div class="challenge-bottom"><span>🌍 Smarter sorting</span><b>+30 XP</b></div>
+          <button class="btn btn-primary challenge-join" data-challenge="Home Sorting Hero">Join challenge ↗</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <div class="cta-leaf">🌿</div>
+      <span class="eyebrow">YOUR NEXT CHOICE CAN MATTER</span>
+      <h2>Waste less.<br><span>Do more with what you have.</span></h2>
+      <p>Join Waste2Worth and start building better habits, one item at a time.</p>
+      <button class="btn btn-primary btn-large" id="finalSignup">Create your free demo account ↗</button>
+    </section>
+  </main>
+
+  <!-- DASHBOARD: SHOWN AFTER LOGIN -->
+  <main id="appDashboard" class="dashboard hidden">
+    <aside class="sidebar">
+      <a href="#" class="brand sidebar-brand"><span class="brand-icon">♻</span><span>Waste<span class="brand-highlight">2</span>Worth</span></a>
+      <div class="sidebar-user"><div class="user-avatar" id="sidebarAvatar">U</div><div><b id="sidebarName">Eco Member</b><small>Green explorer 🌱</small></div></div>
+      <small class="side-label">YOUR WORKSPACE</small>
+      <button class="side-link active" data-view="overview">⌂ <span>Overview</span></button>
+      <button class="side-link" data-view="scanner">⌕ <span>Waste scanner</span></button>
+      <button class="side-link" data-view="rewards">🏆 <span>Rewards & badges</span></button>
+      <button class="side-link" data-view="challenges">🌿 <span>Challenges</span></button>
+      <button class="side-link" data-view="impact">🌎 <span>My impact</span></button>
+      <button class="side-link" data-view="leaderboard">☷ <span>Leaderboard</span></button>
+      <div class="sidebar-bottom"><div class="sidebar-tip">🌱 <b>Little reminder</b><p>Reuse when practical. Sort correctly. Celebrate progress.</p></div><button id="logoutBtn" class="side-link logout">↪ <span>Log out</span></button></div>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="dashboard-topbar"><div><span class="eyebrow">YOUR PERSONAL ECO SPACE</span><h2 id="dashboardGreeting">Welcome back! 🌱</h2></div><div class="topbar-right"><span class="status-pill">● Demo mode</span><button class="user-avatar" id="topAvatar">U</button></div></header>
+
+      <section class="dashboard-view" id="view-overview">
+        <div class="welcome-banner"><div><span class="eyebrow">YOUR JOURNEY, YOUR IMPACT</span><h2>Small actions add up.</h2><p>Ready to give something a second life today?</p><button class="btn btn-white" data-goto="scanner">Explore waste options ↗</button></div><div class="banner-art">🌍<span>✦</span></div></div>
+        <div class="metric-grid">
+          <div class="metric-card"><span>🎁</span><small>TOTAL ECO POINTS</small><strong id="metricPoints">0 XP</strong><div class="metric-foot">Keep taking action</div></div>
+          <div class="metric-card"><span>♻️</span><small>WASTE DIVERTED</small><strong id="metricWaste">0 kg</strong><div class="metric-foot">Recorded demo estimate</div></div>
+          <div class="metric-card"><span>🌱</span><small>ACTIONS COMPLETED</small><strong id="metricActions">0</strong><div class="metric-foot">Your eco activity</div></div>
+          <div class="metric-card"><span>🔥</span><small>ACTIVE STREAK</small><strong id="metricStreak">0 days</strong><div class="metric-foot">Build a regular habit</div></div>
+        </div>
+        <div class="dashboard-columns">
+          <div class="panel"><div class="panel-heading"><div><h3>Your eco journey</h3><p>Progress toward your next level</p></div><span>🌿</span></div><div class="level-row"><div class="level-badge">🌱</div><div><b id="levelName">Seedling</b><small id="levelProgressText">0 / 500 XP</small></div></div><div class="progress-track large"><div id="levelProgress" style="width:0%"></div></div><div class="level-foot"><span>Current level</span><b id="levelCurrent">Level 1</b></div><div class="panel-separator"></div><div class="panel-heading"><div><h3>Quick actions</h3><p>Pick your next step</p></div></div><div class="quick-actions"><button data-goto="scanner"><span>📷</span><b>Explore waste</b></button><button data-goto="challenges"><span>🎯</span><b>Challenges</b></button><button data-goto="impact"><span>🌍</span><b>My impact</b></button></div></div>
+          <div class="panel"><div class="panel-heading"><div><h3>Your latest activity</h3><p>A record of your actions</p></div><span>↗</span></div><div id="activityList" class="activity-list"><div class="empty-state">🌱<p>Your journey starts here.</p><small>Explore an item to discover your first eco-action.</small></div></div></div>
+        </div>
+        <div class="panel leaderboard-preview"><div class="panel-heading"><div><h3>Community leaderboard</h3><p>Friendly competition, shared purpose</p></div><button class="text-link" data-goto="leaderboard">View rankings ↗</button></div><div id="miniLeaderboard"></div></div>
+      </section>
+
+      <section class="dashboard-view hidden" id="view-scanner">
+        <div class="view-heading"><span class="eyebrow">SMARTER WASTE DECISIONS</span><h2>Discover an item's <span>next life.</span></h2><p>Select a sample item or upload a photo to preview the demo workflow.</p></div>
+        <div class="scanner-layout">
+          <div class="panel scanner-panel"><h3>Choose your waste item</h3><p class="muted">This prototype uses sample guidance. Uploading a photo does not run an AI model.</p><label class="upload-zone" for="wasteImage"><span class="upload-symbol">📷</span><b>Upload an item photo</b><small>JPG, PNG or WEBP · Preview only</small><input type="file" id="wasteImage" accept="image/png,image/jpeg,image/webp"></label><div id="imagePreview" class="image-preview hidden"></div><div class="sample-label">OR SELECT AN EXAMPLE</div><div class="waste-options"><button class="waste-option selected" data-item="plastic"><span>🧴</span>Plastic bottle</button><button class="waste-option" data-item="paper"><span>📦</span>Cardboard</button><button class="waste-option" data-item="cloth"><span>👕</span>Old clothes</button><button class="waste-option" data-item="organic"><span>🍌</span>Food scraps</button><button class="waste-option" data-item="ewaste"><span>🔋</span>E-waste</button><button class="waste-option" data-item="glass"><span>🍾</span>Glass bottle</button></div><button id="analyzeBtn" class="btn btn-primary full-width">Explore recommendations ↗</button></div>
+          <div class="panel results-panel"><div class="panel-heading"><div><h3>Your recommendations</h3><p>Practical next steps for your selected item</p></div><span class="status-pill">DEMO</span></div><div id="scannerResult" class="scanner-result"><div class="result-placeholder"><span>🌱</span><h3>Give waste another chance</h3><p>Choose an item to explore its possible next steps.</p></div></div></div>
+        </div>
+      </section>
+
+      <section class="dashboard-view hidden" id="view-rewards">
+        <div class="view-heading"><span class="eyebrow">CELEBRATE EVERY STEP</span><h2>Your effort deserves <span>a little sparkle.</span></h2><p>Earn prototype points through demo activities, build streaks, and unlock achievements.</p></div>
+        <div class="reward-banner"><span>🏆</span><div><small>YOUR ECO POINTS</small><strong id="rewardsPoints">0 XP</strong><p id="rewardsLevel">Level 1 · Seedling</p></div><div class="reward-leaf">✦</div></div>
+        <div class="section-subheading"><h3>Your badges</h3><p>Unlock achievements by trying different actions.</p></div>
+        <div class="badge-grid" id="badgeGrid"></div>
+        <div class="panel streak-panel"><span class="streak-art">🔥</span><div><h3>Build your green streak</h3><p>Record an action on different days to build a consistent habit. This demo stores activity dates locally.</p></div><button class="btn btn-primary" data-goto="scanner">Take an action ↗</button></div>
+      </section>
+
+      <section class="dashboard-view hidden" id="view-challenges">
+        <div class="view-heading"><span class="eyebrow">YOUR COMMUNITY, YOUR PLANET</span><h2>Turn good intentions <span>into habits.</span></h2><p>Join a challenge and track your participation in this prototype.</p></div>
+        <div id="dashboardChallenges" class="challenge-grid"></div>
+      </section>
+
+      <section class="dashboard-view hidden" id="view-impact">
+        <div class="view-heading"><span class="eyebrow">YOUR PERSONAL FOOTPRINT JOURNEY</span><h2>Progress you can <span>see.</span></h2><p>Your dashboard estimates are based on demo actions you record, not independently measured environmental outcomes.</p></div>
+        <div class="metric-grid">
+          <div class="metric-card"><span>♻️</span><small>WASTE DIVERTED</small><strong id="impactWaste">0 kg</strong><div class="metric-foot">Illustrative estimate</div></div>
+          <div class="metric-card"><span>🌱</span><small>ACTIONS LOGGED</small><strong id="impactActions">0</strong><div class="metric-foot">Recorded actions</div></div>
+          <div class="metric-card"><span>🎁</span><small>ECO POINTS</small><strong id="impactPoints">0 XP</strong><div class="metric-foot">Demo reward points</div></div>
+          <div class="metric-card"><span>🎯</span><small>CHALLENGES JOINED</small><strong id="impactChallenges">0</strong><div class="metric-foot">Community participation</div></div>
+        </div>
+        <div class="panel"><div class="panel-heading"><div><h3>Your activity history</h3><p>Every action you record appears here.</p></div><span>🌿</span></div><div id="impactHistory" class="activity-list"></div><button class="btn btn-outline" id="exportBtn">Export my demo data ↓</button></div>
+      </section>
+
+      <section class="dashboard-view hidden" id="view-leaderboard">
+        <div class="view-heading"><span class="eyebrow">FRIENDLY ECO COMPETITION</span><h2>Little actions. <span>Shared progress.</span></h2><p>Explore sample leaderboard entries and your own local demo score.</p></div>
+        <div class="panel"><div class="panel-heading"><div><h3>Community leaderboard</h3><p>Illustrative sample rankings—not real users</p></div><span>🏆</span></div><div id="fullLeaderboard"></div></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="brand"><span class="brand-icon">♻</span><span>Waste<span class="brand-highlight">2</span>Worth</span></a>
+    <p>Less waste. More worth. A greener tomorrow. 🌱</p>
+    <div><a href="#features">Features</a><a href="#how">How it works</a><a href="#impact">Impact</a><button id="footerLogin">Account</button></div>
+    <small>Waste2Worth prototype · Learn, act, and grow sustainably.</small>
+  </footer>
+
+  <!-- LOGIN / SIGNUP MODAL -->
+  <div class="modal-backdrop hidden" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <div class="auth-modal">
+      <button class="modal-close" id="closeAuth" aria-label="Close">×</button>
+      <div class="auth-brand"><span class="brand-icon">♻</span><span>Waste<span class="brand-highlight">2</span>Worth</span></div>
+      <div class="auth-illustration"><span>🌿</span><span>♻️</span><span>🌎</span></div>
+      <div class="auth-copy"><span class="eyebrow">YOUR GREENER JOURNEY STARTS HERE</span><h2 id="authTitle">Welcome back.</h2><p id="authDescription">Small actions can make a meaningful difference.</p></div>
+      <div class="auth-tabs"><button id="loginTab" class="auth-tab active">Log in</button><button id="signupTab" class="auth-tab">Create account</button></div>
+      <form id="authForm">
+        <div id="nameField" class="form-field hidden"><label for="authName">Your name</label><input id="authName" type="text" autocomplete="name" placeholder="e.g. Aanya Sharma" minlength="2"></div>
+        <div class="form-field"><label for="authEmail">Email address</label><input id="authEmail" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+        <div class="form-field"><label for="authPassword">Password</label><div class="password-wrap"><input id="authPassword" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required><button type="button" id="togglePassword" aria-label="Show password">Show</button></div></div>
+        <div id="confirmField" class="form-field hidden"><label for="authConfirm">Confirm password</label><input id="authConfirm" type="password" autocomplete="new-password" minlength="6" placeholder="Enter password again"></div>
+        <p id="authError" class="auth-error" role="alert"></p>
+        <button class="btn btn-primary full-width auth-submit" type="submit" id="authSubmit">Log in ↗</button>
+      </form>
+      <p class="auth-terms">Demo prototype. Do not use a real password or sensitive personal information.</p>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
